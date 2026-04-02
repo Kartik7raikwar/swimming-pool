@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfect Pools Services – Swimming Pool Maintenance Experts</title>
+  <meta name="description" content="Professional swimming pool maintenance, cleaning, chemical balancing, equipment servicing, and pool construction. Keep your pool safe, hygienic, and crystal clear year-round." />
+  <meta name="keywords" content="swimming pool maintenance, pool cleaning, chemical balancing, pool construction, pool renovation" />
+
+  <!-- Favicon (inline SVG data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏊</text></svg>" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="logo">
+        <div class="logo-icon">🏊</div>
+        Perfect<span>Pools</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#plans">Plans</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#clients">Clients</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Contact Us</a>
+      </div>
+
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/hero-pool.png" alt="Luxury swimming pool" />
+    </div>
+
+    <!-- Animated Bubbles -->
+    <div class="hero-bubbles" id="heroBubbles"></div>
+
+    <div class="container hero-content">
+      <h1>Swimming Pool Maintenance <span class="highlight">Experts You Can Trust</span></h1>
+      <p>Complete cleaning, chemical balancing, and equipment servicing to keep your pool safe, hygienic, and crystal clear year-round.</p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary" id="btnBookService">
+          <i class="fas fa-calendar-check"></i> Book Maintenance Service
+        </a>
+        <a href="#contact" class="btn btn-secondary" id="btnFreeInspection">
+          <i class="fas fa-search"></i> Get Free Inspection
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <h3 id="statYears">10+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat">
+          <h3 id="statPools">500+</h3>
+          <p>Pools Maintained</p>
+        </div>
+        <div class="stat">
+          <h3 id="statClients">300+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat">
+          <h3 id="statTeam">25+</h3>
+          <p>Expert Technicians</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave -->
+    <div class="wave-divider">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25.36,1113-14.29,1200,52.47V0Z" fill="#ffffff" opacity=".8"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" fill="#ffffff" opacity=".5"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="#ffffff"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ======== QUICK SERVICES ======== -->
+  <section class="quick-services" id="quickServices">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What We Do</span>
+        <h2>Our Expert Services</h2>
+        <p>Comprehensive pool care solutions for residential and commercial properties</p>
+      </div>
+
+      <div class="quick-services-grid">
+        <div class="qs-card reveal" id="qsPoolCleaning">
+          <div class="icon-box"><i class="fas fa-broom"></i></div>
+          <h3>Pool Cleaning</h3>
+          <p>Regular vacuuming, skimming, and brushing to keep your pool sparkling clean.</p>
+        </div>
+        <div class="qs-card reveal" id="qsChemicalBalancing">
+          <div class="icon-box"><i class="fas fa-flask"></i></div>
+          <h3>Chemical Balancing</h3>
+          <p>pH control, chlorine management, and algae prevention for safe water.</p>
+        </div>
+        <div class="qs-card reveal" id="qsEquipment">
+          <div class="icon-box"><i class="fas fa-cogs"></i></div>
+          <h3>Equipment Maintenance</h3>
+          <p>Pump, filter, and motor inspection to ensure optimal performance.</p>
+        </div>
+        <div class="qs-card reveal" id="qsConstruction">
+          <div class="icon-box"><i class="fas fa-swimming-pool"></i></div>
+          <h3>Pool Construction</h3>
+          <p>Custom pool design & installation for your dream swimming pool.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== ABOUT ======== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images reveal-left">
+          <div class="main-image">
+            <img src="images/about-team.png" alt="Our professional team" />
+          </div>
+          <div class="about-small-images">
+            <div class="small-img">
+              <img src="images/pool-cleaning.png" alt="Pool cleaning" />
+            </div>
+            <div class="small-img">
+              <img src="images/chemical-testing.png" alt="Chemical testing" />
+            </div>
+            <div class="small-img">
+              <img src="images/pool-equipment.png" alt="Pool equipment" />
+            </div>
+            <div class="small-img">
+              <img src="images/pool-construction.png" alt="Pool construction" />
+            </div>
+          </div>
+          <div class="experience-badge">
+            <h3>10+</h3>
+            <p>Years of<br />Experience</p>
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <span class="section-label" style="display:block;text-align:left;padding-left:0;margin-bottom:12px;">About Us</span>
+          <h2>Professional Pool Care You Can Rely On</h2>
+          <p class="about-text">Perfect Pools Services specializes in professional swimming pool maintenance and water treatment solutions. Our trained technicians use modern equipment and high-quality chemicals to ensure your pool remains clean, safe, and hygienic.</p>
+          <p class="about-text">Along with maintenance, we also provide pool construction, renovation, and equipment installation services for residential and commercial clients.</p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Trained Technicians</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Modern Equipment</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Quality Chemicals</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Affordable Plans</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary" id="btnLearnMore">
+            <i class="fas fa-arrow-right"></i> Get In Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CORE SERVICES ======== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Expertise</span>
+        <h2>Core Services</h2>
+        <p>Complete range of pool services tailored to your needs</p>
+      </div>
+
+      <div class="services-categories">
+        <div class="service-category reveal-left">
+          <h3>Primary Services</h3>
+          <div class="service-item" id="svcWeekly">
+            <div class="service-icon"><i class="fas fa-calendar-week"></i></div>
+            <div>
+              <h4>Weekly Pool Maintenance</h4>
+              <p>Routine cleaning, chemical checks, and equipment inspection every week.</p>
+            </div>
+          </div>
+          <div class="service-item" id="svcMonthly">
+            <div class="service-icon"><i class="fas fa-calendar-alt"></i></div>
+            <div>
+              <h4>Monthly Maintenance Plans</h4>
+              <p>Deep cleaning, filter servicing, and comprehensive water quality analysis.</p>
+            </div>
+          </div>
+          <div class="service-item" id="svcAnnual">
+            <div class="service-icon"><i class="fas fa-file-contract"></i></div>
+            <div>
+              <h4>Annual Maintenance Contracts</h4>
+              <p>Year-long coverage with scheduled visits and priority repair service.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-category reveal-right">
+          <h3>Secondary Services</h3>
+          <div class="service-item" id="svcConstruct">
+            <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+            <div>
+              <h4>Pool Construction</h4>
+              <p>Custom-designed pools built with premium materials and expert craftsmanship.</p>
+            </div>
+          </div>
+          <div class="service-item" id="svcRenovate">
+            <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+            <div>
+              <h4>Pool Renovation</h4>
+              <p>Transform your old pool with new tiles, finishes, and modern features.</p>
+            </div>
+          </div>
+          <div class="service-item" id="svcInstall">
+            <div class="service-icon"><i class="fas fa-tools"></i></div>
+            <div>
+              <h4>Equipment Installation</h4>
+              <p>Professional installation of pumps, filters, heaters, and automation systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MAINTENANCE PLANS ======== -->
+  <section class="plans" id="plans">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Choose Your Plan</span>
+        <h2>Maintenance Plans</h2>
+        <p>Flexible plans designed to keep your pool in perfect condition</p>
+      </div>
+
+      <div class="plans-grid">
+        <!-- Weekly -->
+        <div class="plan-card reveal" id="planWeekly">
+          <div class="plan-header">
+            <div class="plan-icon"><i class="fas fa-calendar-week"></i></div>
+            <h3>Weekly Plan</h3>
+            <span class="plan-type">Basic Maintenance</span>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check-circle"></i> Pool cleaning &amp; vacuuming</li>
+            <li><i class="fas fa-check-circle"></i> Chemical testing &amp; adjustment</li>
+            <li><i class="fas fa-check-circle"></i> Equipment inspection</li>
+            <li><i class="fas fa-check-circle"></i> Skimming &amp; brushing</li>
+            <li><i class="fas fa-check-circle"></i> Water level monitoring</li>
+          </ul>
+          <div class="plan-footer">
+            <a href="#contact" class="btn btn-outline" id="btnSelectWeekly">Select Plan</a>
+          </div>
+        </div>
+
+        <!-- Monthly – Featured -->
+        <div class="plan-card featured reveal" id="planMonthly">
+          <div class="plan-badge">Popular</div>
+          <div class="plan-header">
+            <div class="plan-icon"><i class="fas fa-calendar-alt"></i></div>
+            <h3>Monthly Plan</h3>
+            <span class="plan-type">Comprehensive Care</span>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check-circle"></i> Deep pool cleaning</li>
+            <li><i class="fas fa-check-circle"></i> Filter servicing &amp; maintenance</li>
+            <li><i class="fas fa-check-circle"></i> Water chemistry balancing</li>
+            <li><i class="fas fa-check-circle"></i> Tile &amp; surface inspection</li>
+            <li><i class="fas fa-check-circle"></i> Detailed service report</li>
+          </ul>
+          <div class="plan-footer">
+            <a href="#contact" class="btn btn-primary" id="btnSelectMonthly">Select Plan</a>
+          </div>
+        </div>
+
+        <!-- Annual -->
+        <div class="plan-card reveal" id="planAnnual">
+          <div class="plan-header">
+            <div class="plan-icon"><i class="fas fa-file-contract"></i></div>
+            <h3>Annual AMC</h3>
+            <span class="plan-type">Premium Coverage</span>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check-circle"></i> Scheduled maintenance visits</li>
+            <li><i class="fas fa-check-circle"></i> Priority repair service</li>
+            <li><i class="fas fa-check-circle"></i> Cost savings on parts</li>
+            <li><i class="fas fa-check-circle"></i> Emergency support</li>
+            <li><i class="fas fa-check-circle"></i> Annual equipment overhaul</li>
+          </ul>
+          <div class="plan-footer">
+            <a href="#contact" class="btn btn-outline" id="btnSelectAnnual">Select Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== WHY CHOOSE US ======== -->
+  <section class="why-us" id="whyUs">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Why Us</span>
+        <h2>Why Choose Perfect Pools</h2>
+        <p>Trusted by hundreds of pool owners across the region</p>
+      </div>
+
+      <div class="why-us-grid">
+        <div class="why-card reveal" id="whyExperienced">
+          <div class="why-icon"><i class="fas fa-user-shield"></i></div>
+          <h3>Experienced Technicians</h3>
+          <p>Certified & trained professionals with years of expertise.</p>
+        </div>
+        <div class="why-card reveal" id="whyAffordable">
+          <div class="why-icon"><i class="fas fa-tags"></i></div>
+          <h3>Affordable Plans</h3>
+          <p>Budget-friendly maintenance plans for every pool size.</p>
+        </div>
+        <div class="why-card reveal" id="whyQuick">
+          <div class="why-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Quick Response</h3>
+          <p>Fast response service for urgent pool issues.</p>
+        </div>
+        <div class="why-card reveal" id="whyEquipment">
+          <div class="why-icon"><i class="fas fa-microscope"></i></div>
+          <h3>Advanced Equipment</h3>
+          <p>Latest cleaning & testing equipment for best results.</p>
+        </div>
+        <div class="why-card reveal" id="whySatisfaction">
+          <div class="why-icon"><i class="fas fa-heart"></i></div>
+          <h3>100% Satisfaction</h3>
+          <p>Customer satisfaction guaranteed on every service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TESTIMONIALS ======== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Testimonials</span>
+        <h2>What Our Clients Say</h2>
+        <p>Real feedback from real pool owners who trust us</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal" id="testimonial1">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"Perfect Pools Services has been maintaining our pool for over a year now. Their team is professional and reliable."</p>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="testimonial-author">
+            <div class="avatar">RM</div>
+            <div>
+              <h4>Rahul Mehta</h4>
+              <span>Residential Pool Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal" id="testimonial2">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"They fixed our filtration system quickly and now handle our weekly maintenance. Highly recommended!"</p>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="testimonial-author">
+            <div class="avatar">AS</div>
+            <div>
+              <h4>Amit Sharma</h4>
+              <span>Villa Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal" id="testimonial3">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"Our apartment pool is always clean and well maintained thanks to their team. Excellent service quality."</p>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="testimonial-author">
+            <div class="avatar">NK</div>
+            <div>
+              <h4>Neha Kapoor</h4>
+              <span>Property Manager</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal" id="testimonial4">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p>"Professional technicians with excellent service quality. They maintain all our resort pools flawlessly."</p>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="testimonial-author">
+            <div class="avatar">RV</div>
+            <div>
+              <h4>Rohit Verma</h4>
+              <span>Resort Owner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CLIENTS ======== -->
+  <section class="clients" id="clients">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Clients</span>
+        <h2>Who We Serve</h2>
+        <p>Trusted by residential, commercial, and builder clients alike</p>
+      </div>
+
+      <div class="clients-grid">
+        <div class="client-category reveal" id="clientResidential">
+          <div class="cat-icon"><i class="fas fa-home"></i></div>
+          <h3>Residential Clients</h3>
+          <ul>
+            <li><i class="fas fa-chevron-right"></i> Villas</li>
+            <li><i class="fas fa-chevron-right"></i> Farmhouses</li>
+            <li><i class="fas fa-chevron-right"></i> Private Homes</li>
+          </ul>
+        </div>
+        <div class="client-category reveal" id="clientCommercial">
+          <div class="cat-icon"><i class="fas fa-building"></i></div>
+          <h3>Commercial Clients</h3>
+          <ul>
+            <li><i class="fas fa-chevron-right"></i> Hotels</li>
+            <li><i class="fas fa-chevron-right"></i> Resorts</li>
+            <li><i class="fas fa-chevron-right"></i> Apartment Complexes</li>
+            <li><i class="fas fa-chevron-right"></i> Clubs & Fitness Centers</li>
+          </ul>
+        </div>
+        <div class="client-category reveal" id="clientBuilders">
+          <div class="cat-icon"><i class="fas fa-drafting-compass"></i></div>
+          <h3>Builders &amp; Developers</h3>
+          <ul>
+            <li><i class="fas fa-chevron-right"></i> Pool construction partnerships</li>
+            <li><i class="fas fa-chevron-right"></i> Long-term maintenance contracts</li>
+            <li><i class="fas fa-chevron-right"></i> Bulk project services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== GALLERY ======== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Work</span>
+        <h2>Project Gallery</h2>
+        <p>See the quality of our work in action</p>
+      </div>
+
+      <div class="gallery-layout reveal">
+        <!-- Main large image -->
+        <div class="gallery-main" onclick="openLightbox(this)">
+          <img src="images/hero-pool.png" alt="Luxury pool project" />
+          <div class="gallery-overlay">
+            <div>
+              <h3>Luxury Residential Pool</h3>
+              <p>Complete construction & maintenance</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 smaller images -->
+        <div class="gallery-side">
+          <div class="gallery-thumb" onclick="openLightbox(this)">
+            <img src="images/before-after.png" alt="Before and after pool cleaning" />
+            <div class="gallery-overlay">
+              <div>
+                <h3>Before & After</h3>
+                <p>Pool restoration</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-thumb" onclick="openLightbox(this)">
+            <img src="images/pool-cleaning.png" alt="Pool cleaning in progress" />
+            <div class="gallery-overlay">
+              <div>
+                <h3>Pool Cleaning</h3>
+                <p>Maintenance work</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-thumb" onclick="openLightbox(this)">
+            <img src="images/gallery-luxury.png" alt="Infinity pool at sunset" />
+            <div class="gallery-overlay">
+              <div>
+                <h3>Infinity Pool</h3>
+                <p>Premium construction</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-thumb" onclick="openLightbox(this)">
+            <img src="images/gallery-residential.png" alt="Residential pool" />
+            <div class="gallery-overlay">
+              <div>
+                <h3>Residential Pool</h3>
+                <p>Completed project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT ======== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2>Contact Us</h2>
+        <p>Ready to get your pool looking its best? Reach out today!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Let's Talk</h3>
+          <p>Have questions about our services? We're here to help. Reach out through any of the channels below.</p>
+
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:info@perfectpools.com">info@perfectpools.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Service Area</h4>
+              <p>Pan-India Service Coverage</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon - Sat: 8:00 AM - 7:00 PM</p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-btn" id="btnWhatsapp">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+
+          <div class="contact-social">
+            <a href="#" aria-label="Facebook" id="socialFacebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram" id="socialInstagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube" id="socialYoutube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn" id="socialLinkedin"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal-right">
+          <h3>Send Us a Message</h3>
+          <p>Fill in the form below and we'll get back to you shortly.</p>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formName">Your Name</label>
+                <input type="text" id="formName" name="name" placeholder="Enter your name" required />
+              </div>
+              <div class="form-group">
+                <label for="formPhone">Phone Number</label>
+                <input type="tel" id="formPhone" name="phone" placeholder="Enter your phone number" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="formService">Service Required</label>
+              <select id="formService" name="service" required>
+                <option value="">Select a service</option>
+                <option value="Pool Cleaning">Pool Cleaning</option>
+                <option value="Chemical Balancing">Chemical Balancing</option>
+                <option value="Equipment Maintenance">Equipment Maintenance</option>
+                <option value="Pool Construction">Pool Construction</option>
+                <option value="Pool Renovation">Pool Renovation</option>
+                <option value="Weekly Maintenance">Weekly Maintenance</option>
+                <option value="Monthly Maintenance">Monthly Maintenance</option>
+                <option value="Annual AMC">Annual AMC</option>
+                <option value="Free Inspection">Free Inspection</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage">Your Message</label>
+              <textarea id="formMessage" name="message" placeholder="Tell us about your pool and requirements..." rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="btnSubmitForm">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="#home" class="logo" style="color:#fff;font-size:1.3rem;margin-bottom:16px;display:inline-flex;">
+            <div class="logo-icon" style="width:36px;height:36px;font-size:1.1rem;">🏊</div>
+            Perfect<span>Pools</span>
+          </a>
+          <p>Professional swimming pool maintenance, construction, and renovation services. Keeping pools safe, clean, and crystal clear since day one.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="#plans"><i class="fas fa-chevron-right"></i> Maintenance Plans</a></li>
+            <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Pool Cleaning</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Chemical Balancing</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Equipment Repair</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Pool Construction</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Pool Renovation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><a href="tel:+919876543210"><i class="fas fa-phone-alt"></i> +91 98765 43210</a></li>
+            <li><a href="mailto:info@perfectpools.com"><i class="fas fa-envelope"></i> info@perfectpools.com</a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Pan-India Service</a></li>
+            <li><a href="#"><i class="fas fa-clock"></i> Mon-Sat: 8AM - 7PM</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Perfect Pools Services. All rights reserved.</p>
+        <p>Designed with <i class="fas fa-heart" style="color:#f77f00;"></i> for clean pools</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== FLOATING WHATSAPP ======== -->
+  <div class="floating-whatsapp" id="floatingWhatsapp">
+    <a href="https://wa.me/919876543210" target="_blank" aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- ======== BACK TO TOP ======== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ======== LIGHTBOX ======== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+      <i class="fas fa-times"></i>
+    </button>
+    <img src="" alt="Gallery image" id="lightboxImg" />
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

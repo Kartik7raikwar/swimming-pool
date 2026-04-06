@@ -146,24 +146,29 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Simulate form submission
-    const btn = contactForm.querySelector('button[type="submit"]');
-    const originalText = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-    btn.disabled = true;
+    // Construct WhatsApp message to company
+    const whatsappMessage = `New Contact Form Submission:
 
-    setTimeout(() => {
-      btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-      btn.style.background = '#25d366';
-      showFormNotification('Thank you! We will contact you shortly.', 'success');
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+Message: ${message || 'No additional message'}
 
-      setTimeout(() => {
-        btn.innerHTML = originalText;
-        btn.style.background = '';
-        btn.disabled = false;
-        contactForm.reset();
-      }, 3000);
-    }, 1500);
+Please contact this customer soon.`;
+
+    // Company's WhatsApp number
+    const companyPhone = '919589738386';
+
+    const whatsappUrl = `https://wa.me/${companyPhone}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank');
+
+    // Show success notification
+    showFormNotification('Opening WhatsApp with your message...', 'success');
+
+    // Reset form
+    contactForm.reset();
   });
 
   // -------- Form Notification --------
